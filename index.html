@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ecuaciones Cuadráticas</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+<header>
+    <h1>Calculadora de Ecuaciones Cuadráticas</h1>
+</header>
+
+<nav>
+    <a href="#info">¿Qué es?</a>
+    <a href="#formula">Fórmula</a>
+    <a href="#discriminante">Discriminante</a>
+    <a href="#calculadora">Calculadora</a>
+</nav>
+
+<section id="info">
+    <h2>¿Qué es una ecuación cuadrática?</h2>
+    <p>
+        Es una ecuación de segundo grado cuya forma general es:
+    </p>
+    <h3>ax² + bx + c = 0</h3>
+    <p>
+        Donde:
+    </p>
+    <ul>
+        <li><b>a</b> = coeficiente cuadrático</li>
+        <li><b>b</b> = coeficiente lineal</li>
+        <li><b>c</b> = término independiente</li>
+    </ul>
+</section>
+
+<section id="formula">
+    <h2>La Fórmula General</h2>
+    <h3>
+        x = (-b ± √(b² - 4ac)) / 2a
+    </h3>
+    <p><b>a:</b> coeficiente cuadrático.</p>
+    <p><b>b:</b> coeficiente lineal.</p>
+    <p><b>c:</b> término independiente.</p>
+</section>
+
+<section id="discriminante">
+<h2>El Discriminante</h2>
+<p>
+El discriminante es:
+</p>
+<h3>D = b² - 4ac</h3>
+<table>
+<tr>
+<th>Valor</th>
+<th>Resultado</th>
+</tr>
+
+<tr>
+<td>D > 0</td>
+<td>Dos soluciones reales.</td>
+</tr>
+
+<tr>
+<td>D = 0</td>
+<td>Una solución real.</td>
+</tr>
+
+<tr>
+<td>D < 0</td>
+<td>Dos soluciones complejas.</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>Ejemplo</h2>
+
+<p>
+
+x² -5x +6=0
+
+</p>
+
+<p>
+
+Resultado:
+
+x₁=3
+
+x₂=2
+
+</p>
+
+</section>
+
+<section id="calculadora">
+
+<h2>Resolver ecuación</h2>
+
+<input type="text" id="a" placeholder="Coeficiente A">
+
+<input type="text" id="b" placeholder="Coeficiente B">
+
+<input type="text" id="c" placeholder="Coeficiente C">
+
+<br><br>
+
+<button onclick="resolver()">Calcular</button>
+
+<h3 id="resultado"></h3>
+
+</section>
+
+<footer>
+
+Creado con HTML, CSS y JavaScript
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
